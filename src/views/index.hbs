@@ -1,0 +1,10 @@
+<div class="article-list">
+    {{#each articles}}
+    <a class="article-item" href="/article/{{this.id}}">
+        <img src="{{this.Pictures.[0].url}}" />
+        <h2>{{this.Headline}}</h2>
+        <h4>{{this.Subhead}}</h4>
+        <p class="snippet">{{this.Snippet}}</p>
+    </a>
+    {{/each}}
+</div>
